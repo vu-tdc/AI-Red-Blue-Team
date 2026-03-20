@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Consultant Bot - Red & Blue Team Project</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f2f5;
+        }
+        .container {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Hệ thống Bot AI Tư vấn Bảo mật</h1>
+        <p>Đang khởi tạo chatbot...</p>
+    </div>
+
+    <script src="https://sf-cdn.coze.com/obj/unpkg-va/flow-platform/chat-app-sdk/1.2.0-beta.6/libs/oversea/index.js"></script>
+    <script>
+      new CozeWebSDK.WebChatClient({
+        config: {
+          bot_id: '7619327997316726789', // ID Bot của bạn
+        },
+        componentProps: {
+          title: 'AI Security Advisor',
+        },
+        auth: {
+          type: 'token',
+          token: 'pat_********', // LƯU Ý: Thay thế bằng mã Token thật của bạn
+          onRefreshToken: function () {
+            return 'pat_2179RxQ93HHgjffcyPYSXLt7evjJ6nMh95j8NYCEeKVZIyy7rJL0vys5QLVkFZkS'
+          }
+        }
+      });
+    </script>
+</body>
+</html>
