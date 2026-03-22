@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Consultant Bot - Red & Blue Team Project</title>
+    <title>AI Consultant Bot - Red & Blue Team</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -25,20 +25,22 @@
         <p>Đang khởi tạo chatbot...</p>
     </div>
 
-    <script src="https://sf-cdn.coze.com/obj/unpkg-va/flow-platform/chat-app-sdk/1.2.0-beta.6/libs/oversea/index.js"></script>
+    <!-- SDK -->
+    <script src="https://sf-cdn.coze.com/obj/unpkg-va/flow-platform/chat-app-sdk/latest/libs/oversea/index.js"></script>
+
     <script>
       new CozeWebSDK.WebChatClient({
         config: {
-          bot_id: '7619327997316726789', // ID Bot của bạn
+          bot_id: '7619327997316726789'
         },
         componentProps: {
-          title: 'AI Security Advisor',
+          title: 'AI Security Advisor'
         },
         auth: {
           type: 'token',
-          token: 'pat_2179RxQ93HHgjffcyPYSXLt7evjJ6nMh95j8NYCEeKVZIyy7rJL0vys5QLVkFZkS', // LƯU Ý: Thay thế bằng mã Token thật của bạn
-          onRefreshToken: function () {
-            return 'pat_2179RxQ93HHgjffcyPYSXLt7evjJ6nMh95j8NYCEeKVZIyy7rJL0vys5QLVkFZkS'
+          token: 'pat_8Af2VdYg5KU5tzYn9D13rSymgyMpwRFjl04GVLcQdIfufmPROvGRcoLpZ64srFsg', // 🔴 THAY TOKEN MỚI
+          onRefreshToken: async function () {
+            return 'pat_8Af2VdYg5KU5tzYn9D13rSymgyMpwRFjl04GVLcQdIfufmPROvGRcoLpZ64srFsg'
           }
         }
       });
