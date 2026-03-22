@@ -2,48 +2,20 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Security Advisor - Red & Blue Team</title>
-
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #0f172a, #1e293b);
-            color: white;
-            text-align: center;
-        }
-
-        h1 {
-            margin-top: 40px;
-        }
-
-        p {
-            opacity: 0.8;
-        }
-    </style>
+    <title>Coze Chat Bot</title>
 </head>
-
 <body>
-
-    <h1>🔐 AI Security Advisor</h1>
-    <p>Chatbot tư vấn Red Team & Blue Team</p>
-
-    <!-- Coze SDK -->
-    <script src="https://sf-cdn.coze.com/obj/unpkg-va/flow-platform/chat-app-sdk/latest/libs/oversea/index.js"></script>
-
+    <script src="https://sf-cdn.coze.com/obj/unpkg-va/flow-platform/chat-app-sdk/1.2.0-beta.6/libs/oversea/index.js"></script>
     <script>
-        new CozeWebSDK.WebChatClient({
-            config: {
-                bot_id: "7562079502826864657"
-            },
-            componentProps: {
-                title: "AI Security Advisor",
-                lang: "vi",
-                theme: "dark"
-            }
-        });
+      new CozeWebSDK.WebChatClient({
+        config: { bot_id: '7562079502826864657' },
+        componentProps: { title: 'Coze' },
+        auth: {
+          type: 'token',
+          token: 'pat_qxDPgnQZxOuZMNYbktg3ZGch9KJ84xc9S9umve6fkKxkZpHTLswb9YXegXOLujK0',
+          onRefreshToken: function () { return 'pat_qxDPgnQZxOuZMNYbktg3ZGch9KJ84xc9S9umve6fkKxkZpHTLswb9YXegXOLujK0' }
+        }
+      });
     </script>
-
 </body>
 </html>
