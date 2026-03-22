@@ -1,49 +1,49 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Consultant Bot - Red & Blue Team</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #f0f2f5;
-        }
-        .container {
-            text-align: center;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Security Advisor - Red & Blue Team</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #0f172a, #1e293b);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    h1 {
+      margin-bottom: 10px;
+    }
+
+    p {
+      opacity: 0.8;
+    }
+  </style>
 </head>
+
 <body>
-    <div class="container">
-        <h1>Hệ thống Bot AI Tư vấn Bảo mật</h1>
-        <p>Đang khởi tạo chatbot...</p>
-    </div>
+  <h1>🔐 AI Security Advisor</h1>
+  <p>Chatbot tư vấn Red Team & Blue Team</p>
 
-    <!-- SDK -->
-    <script src="https://sf-cdn.coze.com/obj/unpkg-va/flow-platform/chat-app-sdk/latest/libs/oversea/index.js"></script>
+  <!-- Coze SDK -->
+  <script src="https://sf-cdn.coze.com/obj/unpkg-va/flow-platform/chat-app-sdk/latest/libs/oversea/index.js"></script>
 
-    <script>
-      new CozeWebSDK.WebChatClient({
-        config: {
-          bot_id: '7619327997316726789'
-        },
-        componentProps: {
-          title: 'AI Security Advisor'
-        },
-        auth: {
-          type: 'token',
-          token: 'pat_8Af2VdYg5KU5tzYn9D13rSymgyMpwRFjl04GVLcQdIfufmPROvGRcoLpZ64srFsg', // 🔴 THAY TOKEN MỚI
-          onRefreshToken: async function () {
-            return 'pat_8Af2VdYg5KU5tzYn9D13rSymgyMpwRFjl04GVLcQdIfufmPROvGRcoLpZ64srFsg'
-          }
-        }
-      });
-    </script>
+  <script>
+    new CozeWebSDK.WebChatClient({
+      config: {
+        bot_id: "7619327997316726789" // ID bot của bạn
+      },
+      componentProps: {
+        title: "AI Security Advisor"
+      }
+    });
+  </script>
 </body>
 </html>
